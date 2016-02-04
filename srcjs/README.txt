@@ -1,0 +1,1 @@
+This folder will hold the actual HTML app. For example, in the FlexSearch repository, the analyzer app is at <root>/srcjs/src/apps/analyzer.

@@ -234,3 +234,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Build folders
+build
+build-test
+build-portal
+deploy
