@@ -25,7 +25,7 @@ WHERE firstname like 'v*'
                                          CreateJob = true ) // I want to get a job ID back and check the status of the job myself
 
     // Create a client to send the SQL request
-    let api = new CommonApi("localhost:9800")
+    let api = new CommonApi("http://localhost:9800")
     
     // Send the actual request
     let result = api.Sql(request, "contact")
@@ -38,6 +38,6 @@ WHERE firstname like 'v*'
     let status =
         match jobId with
         | Some(id) -> 
-            let jobApi = new JobsApi("localhost:9800")
+            let jobApi = new JobsApi("http://localhost:9800")
             printfn "Job Status: %A" <| jobApi.GetJob(id).Data.JobStatus
         | None -> printfn "Oops"
