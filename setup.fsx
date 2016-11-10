@@ -28,7 +28,7 @@ if buildServer = BuildServer.AppVeyor then
 // Version information
 let majorVersion = 0
 let minorVersion = 9
-let patchLevel = 1
+let patchLevel = 2
 let buildVersion = System.DateTime.UtcNow.ToString("yyyyMMddhhmm")
 let version = sprintf "%i.%i.%i-alpha+%s" majorVersion minorVersion patchLevel buildVersion
 let productName = "FlexSearch"
